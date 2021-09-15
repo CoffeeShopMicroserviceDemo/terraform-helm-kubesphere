@@ -12,7 +12,6 @@ variable "kubesphere_namespace" {
 variable "do_token" {
   description = "Digital Ocean Personal access token"
   type        = string
-  default     = ""
 }
 
 variable "do_k8s_name" {
@@ -21,8 +20,7 @@ variable "do_k8s_name" {
   default     = "k8s-do"
 }
 
-variable "do_project_name" {
-  description = "Digital Ocean project name"
+variable "do_project_id" {
+  description = "Digital Ocean project id"
   type = string
-  default = "kubesphere"
 }
